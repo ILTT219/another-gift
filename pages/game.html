@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="vi">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>decrypt</title>
-        <link rel="stylesheet" href="style/style.css">
-    </head>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <!-- Link to external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/game.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="start-screen">
+        <h1>Valentine's Maze</h1>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen">
+        <h1>Game Over!</h1>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+
+    <!-- Game Content -->
+    <h1 id="heading">Mini Game :></h1>
+    <canvas id="canvas"></canvas>
+
+    <!-- Link to external JavaScript at the end of the body for best practices -->
+    <script src="script/game.js"></script>
+</body>
 </html>
